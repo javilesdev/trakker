@@ -1,0 +1,14 @@
+h1 Hello there
+
+li= link_to 'Chile', root_path(locale: 'es-CL')
+li= link_to 'España', root_path(locale: :es)
+
+= debug I18n.locale
+br
+- money = Money.new(1000, "CLP")
+
+h4 Currency
+= number_to_currency(money, locale: I18n.locale)
+h4 Converted
+
+= currency(money)
