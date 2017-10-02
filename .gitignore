@@ -42,3 +42,18 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore all logfiles and tempfiles.
+/.directory
+/log/*
+!/log/.keep
+/tmp
+/**/.DS_Store
+/public/system/**
+/public/images/**
+/**/.directory
+# Ignore database.yml file
+/config/database.yml
+!/*/ruby-gemset
+/.ruby-gemset
+/.rvmrc
